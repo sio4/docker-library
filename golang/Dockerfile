@@ -1,7 +1,11 @@
 # vim: set ts=4 sw=4 expandtab:
-FROM frolvlad/alpine-glibc:alpine-3.7_glibc-2.26
+#
+# https://hub.docker.com/r/scinix/golang
+# https://hub.docker.com/r/frolvlad/alpine-glibc
 
-ENV GO_VER 1.9.4
+FROM frolvlad/alpine-glibc:alpine-3.9_glibc-2.28
+
+ENV GO_VER 1.12.7
 ENV GO_OS linux
 ENV GO_ARCH amd64
 
